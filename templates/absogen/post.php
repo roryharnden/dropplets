@@ -4,7 +4,8 @@ require_once "./SleekDB/src/Store.php";
 
 use SleekDB\Store;
 ?>
-<div class="row mb-4">
+<main>
+<!-- <div class="row mb-4">
     <div class="col-12">
         <?php
         if (isset($post['image'])) {
@@ -17,20 +18,20 @@ use SleekDB\Store;
         }
             ?>
     </div>
-</div>
+</div> -->
 <div class="row mt-5 mb-4">
-    <div class="col-12">
+    <div class="col-md-8 col-xl-6 col-xxl-5 mx-auto">
         <h1 class="display-6"><?php echo $post['title']; ?></h1>
         <h5 class="text-muted"><?php echo $post['author']; ?> - <?php echo date('F j, Y', $post['date']); ?></h5>
     </div>
 </div>
 <div class="row mb-5">
-    <div class="col-12">
+    <div class="col-md-8 col-xl-6 col-xxl-5 mx-auto">
         <?php echo $Extra->text($post['content']); ?>
     </div>
 </div>
 <div class="row mb-5">
-    <div class="col-12">
+    <div class="col-md-8 col-xl-6 col-xxl-5 mx-auto">
         <button type="button" class="btn btn-primary" onclick="history.go(-1);">Go Back</button>
         <a type="button" class="btn btn-secondary" href="<?php echo $siteConfig['domain'] ?>">Go Home</a>
     </div>
@@ -38,3 +39,4 @@ use SleekDB\Store;
 <?php
 require "footer.php";
 ?>
+</main>

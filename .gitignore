@@ -1,1 +1,3 @@
 siteDatabase/*
+.vscode/ftp-sync.json
+.DS_Store

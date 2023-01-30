@@ -13,7 +13,7 @@ foreach ($allPosts as $post) {
 	if ($postsLoaded == 3 || $postsLoaded == 0) {?><div class="row align-items-start row-cols-lg-3 g-5 my-1"><?php }?>
 	<div class="col">
 		<div class="card">
-			<?php
+			<!-- <?php
 			if (is_numeric($post['image']) == TRUE) {
 				$databaseDirectory = "./siteDatabase";
 				$imageStore = new Store("images", $databaseDirectory);
@@ -23,7 +23,7 @@ foreach ($allPosts as $post) {
 				echo '<img class="card-img-top" src="' . $siteConfig["domain"] . '/uploads/private.png">';
 			} else {
 				echo '<img class="card-img-top" src="' . $siteConfig["OGImage"] . '">';
-			}?>
+			}?> -->
 			<div class="card-body">
 				<a href="<?php echo $router->generate('post', ['id' => $post['_id']]); ?>" class="text-decoration-none text-dark">
 					<h3 class="card-title"><?php echo $post['title']; ?></h3>

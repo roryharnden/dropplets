@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html lang="en">
 
 <head>
@@ -25,6 +25,8 @@
             object-fit: cover;
         }
     </style>
+
+    <link rel="stylesheet" href="/templates/absogen/styles.css" />
 
     <!-- Starting up the OpenGraph Tags... -->
     <!-- Search Engine -->
@@ -76,25 +78,23 @@
                                         } ?>">
 </head>
 
-<body>
-    <style>
-        .container {
-            border-top: 2px solid #40c057;
-        }
-
-        .card::after {
-            content: '';
-            border-left: 2px solid #40c057;
-            position: absolute;
-            height: 0;
-            left: 0;
-            top: 0;
-        }
-    </style>
-    <div class="container">
-        <div class="row my-5">
-            <div class="col-12 text-center">
-                <h3><?php echo $siteConfig['name']; ?></h3>
-                <small class="text-muted"><?php echo $siteConfig['info']; ?></small>
-            </div>
-        </div>
+<body class="py-3 px-0 px-sm-3 d-flex min-vh-100 text-light bg-dark align-items-stretch"> 
+    
+    <div class="container-fluid cover-container d-flex align-items-stretch w-100 min-vh-100 mx-auto flex-column">
+    <header
+          id="top"
+          class="align-items-md-end p-5 pb-4 px-4 px-md-5 d-flex flex-column justify-content-between flex-sm-row text-center"
+        >
+          <div class="float-md-start align-self-start logo">
+            <a class="logo-image" href="http://absolutegeni.us/" alt="Absolute Genius"
+              ><img src="/templates/absogen/img/ag_wordmark_white.svg" /><img
+                class="image-hover"
+                src="/templates/absogen/img/ag_wordmark.svg"
+            /></a>
+          </div>
+          <a href="/" alt="Absolute Genius"><h3 class="mb-0"><?php echo $siteConfig['name']; ?></h3></a>
+  
+        </header>
+        <div class="strapline p-4 text-center mx-md-5 mx-4"><?php echo $siteConfig['info']; ?></div>
+        <div class="container">
+            
